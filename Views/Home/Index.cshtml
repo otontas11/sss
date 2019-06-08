@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Movie>
+
+    @{
+    ViewData["Title"] = "Home Page";
+    } 
+    <div class="album py-4 bg-light">
+        <div class="container" style="max-width: 1250px">
+
+            <div class="row">
+                @Html.Partial("_movieList",Model)
+
+            </div>
+        </div>
+    </div>
